@@ -16,7 +16,7 @@ let routes = [
         component:Login
     },
     {
-        path:"/shop",
+        path:"/shop/:id/:name",
         component:Shop
     },
     {
@@ -36,7 +36,7 @@ let routes = [
         component:Write
     },
     {
-        path:"/detail",
+        path:"/detail/:detailId",
         component:Detail
     },
     {
