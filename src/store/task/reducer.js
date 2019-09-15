@@ -1,6 +1,10 @@
 
 const defaultState = {
     token: [],
+    count:1,
+    name:"",
+    id:"",
+    storeid:""
   }
   
   const reducer = (state = defaultState, action) => {

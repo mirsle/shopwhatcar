@@ -1,8 +1,8 @@
 /*
  * @Author: 马新杰 
  * @Date: 2019-09-11 21:16:23 
- * @Last Modified by:   马新杰 
- * @Last Modified time: 2019-09-11 21:16:23 
+ * @Last Modified by: 马新杰
+ * @Last Modified time: 2019-09-12 09:53:06
  */
 import React, { Component } from 'react'
 import {gooslist} from "../api/commodity"
@@ -40,9 +40,9 @@ class Shop extends Component {
                 {list.map((item,index)=>{
                     return <div className="shopitem" key={index} onClick={this.handleToDetail.bind(this,item.goods_id)}>
                             <div className="left">
-                                <p>商品名称{item.goods_name}</p>
+                                <p>商品名称:{item.goods_name}</p>
                                 <p className="price">商品价格:￥{item.market_price}/天</p>
-                                <p>商品简介{item.detail}</p>
+                                <p>商品简介:{item.detail}</p>
                             </div>
                             <div className="right">
                                 <img></img>
